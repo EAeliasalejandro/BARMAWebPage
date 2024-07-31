@@ -1,0 +1,28 @@
+// Styling for the contact section
+section#contact {
+  .section-heading {
+    margin-bottom: 60px;
+    color: #212529;
+  }
+}
+.iconWa{
+  color: $primary;
+  width: 120px;
+}
+.mapa{
+  border:0; 
+  border-radius: 58px;
+}
+
+//Menos de 760
+@media(max-width:767.98px){
+  .mapaContainer{
+    width: 100%;
+  }
+  .mapa{
+    width: 100%;
+  }
+  .widgetWa{
+    display: none;
+  }
+}
