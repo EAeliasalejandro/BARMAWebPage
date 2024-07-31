@@ -1,0 +1,91 @@
+// Estilos del encabezado
+header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+header.masthead {
+  text-align: left;
+  .intro-text {
+    
+    padding-top: 150px;
+    padding-bottom: 100px;
+    .intro-heading {
+      
+      color: $primary;
+      font-size: 50px;
+      font-weight: 500;
+      line-height: 80px;
+      margin-bottom: 25px;
+      
+      //@include heading-font;
+      //@include menuBar-Font;
+    }
+    .intro-lead-in {
+      color: white;
+      font-size: 22px;
+      font-style: normal;
+      line-height: 22px;
+      margin-bottom: 25px;
+      //@include serif-font;
+      @include menuBar-Font;
+    }
+    .subcontenido {
+      color: white;
+      font-size: 22px;
+      //font-style: italic;
+      line-height: 22px;
+      margin-bottom: 25px;
+      //@include serif-font;
+      @include menuBar-Font;
+    }
+    
+  }
+}
+
+.flecha{
+  display: block;
+  margin: 0 auto; 
+  fill: white;
+  width: 8%;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+
+@media(min-width:768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 300px;
+      padding-bottom: 200px;
+      .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        @include serif-font
+      }
+      .intro-heading {
+        font-size: 75px;
+        font-weight: 500;
+        line-height: 80px;
+        margin-bottom: 50px;
+        @include menuBar-Font;
+        //@include body-font;
+      }
+    }
+  }
+}
+
+
