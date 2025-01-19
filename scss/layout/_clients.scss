@@ -1,0 +1,31 @@
+.slider {
+    width: 75vw;
+    margin: auto;
+    overflow: hidden;
+
+    .slide-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+        width: calc(200px * 10); // Número total de imágenes (originales + duplicadas)
+    }
+
+    .slide {
+        width: 200px;
+        margin-right: 20px; // Separa las imágenes un poco más
+        flex-shrink: 0;
+    }
+
+    .slide img {
+        width: 100%;
+        display: block;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-200px * 5)); // Ancho exacto de las imágenes originales
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// estilos para mision y vision
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+.iconGrafica{
+    color: black;
+}
+.iconCuadrado{
+    color: $primary;
+}
+hr {
+    height: 2px;
+    background-color: $primary;
+}
+.tituloMision{
+    font-size: 40px;
+}
+.tituloVision{
+    font-size: 40px;
+}
+.mision{
+    margin: 0px 0px 60px 0;
+}
+.iconTitleMision{
+    display: flex;
+}
+.iconTitleVision{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.imgVisionCelular{
+    display: none;
+}
+
+@media(max-width:767.98px) {
+    .imgMision{
+        width: 100%;
+    }
+    .imgVision{
+        display: none;
+    }
+    .imgVisionCelular{
+        display: block;
+        width: 100%;
+    }
+}
