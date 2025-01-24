@@ -1,3 +1,6 @@
+.galeriaProyectos{
+    display: flex; justify-content: space-between;
+}
 .modal {
     .modal-content {
         border-radius: 10px;
@@ -59,7 +62,6 @@
         inset: auto auto 30px 30px;
         margin: 0;
         transition: inset 0.3s 0.3s ease-out;
-        //font-family: "Roboto Condensed", sans-serif;
         @include heading-font;
         font-weight: 700;
         text-transform: uppercase;
@@ -71,6 +73,7 @@
         opacity: 0;
         max-width: 80%;
         transition: opacity 0.3s ease-out;
+        
     }
 
     p {
@@ -84,7 +87,7 @@
     }
 
     &:hover h2 {
-        inset: auto auto 220px 30px;
+        inset: auto auto 290px 30px; //recorrido del titulo
         transition: inset 0.3s ease-out;
     }
 

@@ -533,6 +533,11 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   }
 }
 
+.galeriaProyectos {
+  display: flex;
+  justify-content: space-between;
+}
+
 .modal .modal-content {
   border-radius: 10px;
 }
@@ -609,7 +614,7 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
   text-decoration: none;
 }
 .cardProyecto:hover h2 {
-  inset: auto auto 220px 30px;
+  inset: auto auto 290px 30px;
   transition: inset 0.3s ease-out;
 }
 .cardProyecto:hover p, .cardProyecto:hover a {
